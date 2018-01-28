@@ -1,0 +1,52 @@
+{
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }, 
+  "content_scripts": [
+    {
+      "css": [
+        "replaceCss.css"
+      ], 
+      "js": [
+        "main.js"
+      ], 
+      "matches": [
+        "*://*.vk.com/*", 
+        "*://vk.com/*", 
+        "*://*.vk.me/*"
+      ]
+    }
+  ], 
+  "default_locale": "ru", 
+  "description": "__MSG_desc__", 
+  "developer": {
+    "name": "senap"
+  }, 
+  "icons": {
+    "16": "icon/16.png", 
+    "256": "icon/256.png", 
+    "48": "icon/48.png", 
+    "64": "icon/64.png"
+  }, 
+  "manifest_version": 2, 
+  "name": "Скачать Музыку ВКонтакте", 
+  "options_page": "options.html", 
+  "developer": {
+    "name": "Dan Walker"
+  }, 
+  "permissions": [
+    "*://*.vk.me/*", 
+    "*://vk.com/*", 
+    "downloads", 
+    "<all_urls>"
+  ], 
+  "update_url": "https://extension-updates.opera.com/api/omaha/update/", 
+  "version": "3.8.3", 
+  "web_accessible_resources": [
+    "download.png", 
+    "options.html", 
+    "VKOPTIONS.js"
+  ]
+}
